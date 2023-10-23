@@ -5,40 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/keyboard_3x-removebg-preview.png">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <title>Home</title>
+  <title>home</title>
 </head>
 <body>
     <header>
         <button class="hamburger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </button>
-        <img class="logo" src="assets/images/Logowebshop-removebg-preview.png" alt="logo">
-        <nav>
+        <a href="index.html"><img class="logo" src="assets/images/Logowebshop-removebg-preview.png" alt="logo"></a>
+        <nav class="main-nav" id="nav-menu">
           <a href="index.html">Home</a>
           <a href="shop.html">Toetsenborden</a>
           <a href="contact.html">Contact</a>
         </nav>
         <figure class="icons">
-            <img src="assets\images\search-interface-symbol.png" alt="search icon">
-
+            <img src="assets/images/search-interface-symbol.png" alt="search icon">
             <img src="assets/images/user(2).png" alt="user icon">
-
             <img src="assets/images/shopping-bag-removebg-preview.png" alt="shopping cart icon">   
         </figure>
     </header>
 
     <section class="banner">
-        <img src="assets\images\katharina-gloth-dbgbyzFR8uI-unsplash.jpg" alt="banner image">
-        <article class="banner-text">
-            <h1>Boardroom Elegance</h1>
-            <p>Elegance in Design, Excellence in Typing</p>
-        </article>
+        <img src="assets/images/katharina-gloth-dbgbyzFR8uI-unsplash.jpg" alt="banner image">
     </section>
 
-    <main class="home-page">
+    <main>
+    <div id="product-title">
         <h1>Populairste Producten</h1>
         <section class="featured-products">
             <figure>
@@ -69,12 +65,13 @@
                 <figcaption>iQunix ZX75<br>€185.07</figcaption><br>
             </figure>
         </section>
+    </div>
     </main>
 
-    <hr>
-
     <section class="about-me">
-        <img src="assets/images/jordy.png" alt="photo of Jordy" class="about-me-image">
+        <a href="https://instagram.com/izJordy">
+            <img src="assets/images/jordy.png" alt="photo of Jordy" class="about-me-image">
+        </a>
         <article class="about-me-text">
             <h2>Over Mezelf</h2>
             <p>
@@ -85,8 +82,21 @@
     </section>
 
     <footer class="footer">
-        <p>&copy; Jordy Van Den Kieboom</p>
-    </footer>    
+        <p>
+            <span>&copy; Jordy Van Den Kieboom</span><span>alle rechten voorbehouden</span>
+        </p>
+
+        <a href="https://twitter.com/DevboomVanDen">
+        <figure>
+            <img src="assets/images/twitter.png">
+            <figcaption>
+                @vandenkieboomDev
+            </figcaption>
+        </figure>
+        </a>
+    </footer>
     
+    <script src="js"></script> 
+
 </body>
 </html>
