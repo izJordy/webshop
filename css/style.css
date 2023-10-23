@@ -20,6 +20,7 @@ body {
   /* background-size: 100% 400%; */
   padding-top: 11vh;
   padding-bottom: 3vh;
+  overflow-x: hidden;
 }
 
 header {
@@ -534,6 +535,14 @@ aside {
   .featured-products {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .contact-box {
+    width: 97%;
+  }
+
+  .map iframe {
+    width: 21rem;
   }
 
   .shop-grid-container {
