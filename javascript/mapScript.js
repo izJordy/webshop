@@ -7,3 +7,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var marker = L.marker([51.285923589249514, 4.414530446245566]).addTo(map);
 marker.bindPopup("Board Elegance").openPopup();
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e) {
+  window.open("https://youtu.be/dQw4w9WgXcQ?si=i91z5Gd-dYToth9c"); 
+});
