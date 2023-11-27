@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="assets/images/keyboard_3x-removebg-preview.png">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="javascript/shoppingCart.js" defer></script>
   <title>shop</title>
 </head>
 <body>
@@ -36,50 +37,8 @@
   <main>
     <section class="shop-grid-container">
       <aside>
-        <section class="sidebar">
-          <h3>Profiel</h3>
-          <label>
-            <input type="checkbox" name="switch" value="red">Laag Profiel
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="switch" value="blue">Normaal Profiel
-          </label>
-        </section>
-
-        <hr>
-
-        <section class="sidebar">
-          <h3>Indeling</h3>
-          <label>
-            <input type="checkbox" name="layout" value="ansi">ANSI
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="layout" value="ansi-iso">ANSI & ISO
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="layout" value="iso">ISO
-          </label>
-        </section>
-
-        <hr>
-
-        <section class="sidebar">
-          <h3>Toetsenkaps Type</h3>
-          <label>
-            <input type="checkbox" name="layout" value="abs">ABS Shine-through
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="layout" value="pbt">Double-shot PBT
-          </label>
-
-          <div class="price-slider">
-            <p>price range</p>
-            <input type="range" id="slider" min="0" max="100">
-          </div>
+        <section id="sidebar">
+          <p id="message"></p>
         </section>
       </aside>
 
@@ -90,6 +49,7 @@
           <p class="product-description">Mechanisch Toetsenbord 75%</p>
         </a>
         <span class="price">€295,45</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -99,6 +59,7 @@
           <p class="product-description">Mechanisch Toetsenbord 100%</p>
         </a>
         <span class="price">€230,87</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -108,6 +69,7 @@
           <p class="product-description">Mechanisch Toetsenbord 60%</p>
         </a>
         <span class="price">€189.99</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -117,6 +79,7 @@
           <p class="product-description">Mechanisch Toetsenbord 75%</p>
         </a>
         <span class="price">€210,00</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -126,6 +89,7 @@
           <p class="product-description">Mechanisch Toetsenbord 96%</p>
         </a>
         <span class="price">€185.07</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -135,6 +99,7 @@
           <p class="product-description">Mechanisch Toetsenbord 100%</p>
         </a>
         <span class="price">€270.99</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -144,6 +109,7 @@
           <p class="product-description">Optisch Toetsenbord 80%</p>
         </a>
         <span class="price">€150,19</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -153,6 +119,7 @@
           <p class="product-description">Optisch Toetsenbord 100%</p>
         </a>
         <span class="price">€234,90 </span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -162,6 +129,7 @@
           <p class="product-description">Mechanisch Toetsenbord 100%</p>
         </a>
         <span class="price">€120.99</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -171,6 +139,7 @@
           <p class="product-description">Mechanisch Toetsenbord 100%</p>
         </a>
         <span class="price">€210,99</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -180,6 +149,7 @@
           <p class="product-description">Mechanisch Toetsenbord 100%</p>
         </a>
         <span class="price">€187,88</span>
+        <button class="product-button">add to cart</button>
       </article>
 
       <article class="product">
@@ -189,6 +159,7 @@
           <p class="product-description">Mechanisch Toetsenbord 60%</p>
         </a>
         <span class="price">€80,99</span>
+        <button class="product-button">add to cart</button>
       </article>
     </section>
   </main>
