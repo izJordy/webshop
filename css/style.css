@@ -360,6 +360,7 @@ aside {
 }
 
 .product {
+  position: relative;
   text-align: center;
   line-height: 1.3rem;
   margin-top: 2rem;
@@ -430,6 +431,46 @@ aside {
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+.product-button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.product:hover .product-button {
+  display: block;
+  opacity: 0.9;
+}
+
+.product-button:hover{
+  background-color: #2a2a2a;
+}
+
+#headingbob {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#bob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bob img {
+  width: 16rem;
 }
 
 #map {
