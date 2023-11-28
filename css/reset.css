@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.11 (last updated 20.9.2023)
+    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -33,7 +33,7 @@ a, button {
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+ol, ul, menu, summary {
   list-style: none;
 }
 
@@ -75,11 +75,6 @@ meter {
   color: unset;
 }
 
-/* remove default dot (•) sign */
-::marker {
-  content: initial;
-}
-
 /* fix the feature of 'hidden' attribute.
  display:revert; revert to element instead of attribute */
 :where([hidden]) {
@@ -106,4 +101,9 @@ meter {
 :where(dialog:modal) {
   all: revert;
   box-sizing: border-box;
+}
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+  display: none;
 }
