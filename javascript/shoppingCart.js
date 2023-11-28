@@ -2,7 +2,7 @@ const addToCartButtons = document.getElementsByClassName("product-button");
 const message = document.getElementById("message");
 const cartItems = document.getElementById("cart-items");
 const totalPriceElement = document.getElementById("total-price");
-const form = document.getElementById("form");
+const remove = document.getElementById("remove");
 
 const productNames = ["Asus Rog Azoth", "Asus Rog Claymore", "Wooting 60HE"];
 const productPrices = [295.45, 230.87, 189.99];
@@ -18,6 +18,10 @@ for (let i = 0; i < addToCartButtons.length; i++) {
     addToCart(i);
   });
 }
+
+remove.addEventListener("click", function(e) {
+  alert("hello");
+})
 
 //function om toetevoege aan cart[] en gaat ook checken if product already exists in cart[]
 function addToCart(productIndex) {
@@ -60,7 +64,7 @@ function showCart() {
 
   cart.forEach(function(item) {
     const cartItem = document.createElement("li");
-    cartItem.innerHTML = `${item.name} - Quantity: ${item.quantity} - €${(item.price * item.quantity).toFixed(2)}`;
+    cartItem.innerHTML = `<br>${item.name}<br>Quantity: ${item.quantity}<br>€${(item.price * item.quantity).toFixed(2)}`;
     cartItems.appendChild(cartItem);
   });
 }
