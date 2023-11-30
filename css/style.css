@@ -382,7 +382,7 @@ aside {
   transition: all 0.3s;
 }
 
-.product img:hover {
+.product:hover img:not(.wishlist-icon img) {
   opacity: 0.8;
   animation: shake 0.80s;
   animation-iteration-count: infinite;
@@ -566,7 +566,7 @@ select.classic {
   color: #620920;
 }
 
-.product-page-button {
+#product-page-button {
   color: white;
   font-size: .9rem;
   padding: 5px;
@@ -669,6 +669,18 @@ select.classic {
 
 .spanRed {
   color: var(--clr-maroon);
+}
+
+.wishlist-icon {
+  position: sticky;
+  top: 100px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.wishlist-icon img {
+  width: 30px;
+  height: 30px;
 }
 
 /* height */
