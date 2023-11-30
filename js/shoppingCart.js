@@ -3,6 +3,7 @@ const message = document.getElementById("message");
 const cartItems = document.getElementById("cart-items");
 const totalPriceElement = document.getElementById("total-price");
 const checkoutText = document.getElementById("checkout-text");
+const wishlistIcons = document.getElementsByClassName('wishlist-icon');
 
 const productNames = [
   "Asus Rog Azoth",
@@ -38,19 +39,21 @@ let cart = [];
 let totalPrice = 0;
 
 
-//voegt event toe aan alle buttons en geeft dan de parameter i door naar function addToCart
-//dus bv als 2de product word geklikt dan word productIndex dus 1 want we tellen van 0
+// voegt event toe aan alle buttons en geeft dan de parameter i 
+//door naar function addToCart
+// dus bv als 2de product word geklikt dan word productIndex dus 1 want we tellen van 0
 for (let i = 0; i < addToCartButtons.length; i++) {
   addToCartButtons[i].addEventListener("click", function (e) {
     addToCart(i);
   });
-}
+};
 
 checkoutText.addEventListener("click", function(e) {
   alert("scam successful\n\nsending virus..\npress 'OK' to accept the virus");
-})
+});
 
-//function om toetevoege aan cart[] en gaat ook checken if product already exists in cart[]
+//function om toetevoege aan cart[] 
+//en gaat ook checken if product already exists in cart[]
 function addToCart(productIndex) {
   const productName = productNames[productIndex];
   const productPrice = productPrices[productIndex];
@@ -73,7 +76,7 @@ function addToCart(productIndex) {
 
   showCart();
   updateTotalPrice();
-}
+};
 
 
 
@@ -122,8 +125,8 @@ function removeItemFromCart(index) {
     cart.splice(index, 1);
   }
 
-  showCart(); // Update the displayed cart
-  updateTotalPrice(); // Update the total price
+  showCart();
+  updateTotalPrice();
 }
 
 function updateCheckoutText() {
@@ -132,5 +135,23 @@ function updateCheckoutText() {
   } else {
     checkoutText.innerHTML = "";
   }
-}
+};
 
+for (let i = 0; i < wishlistIcons.length; i++) {
+  wishlistIcons[i].addEventListener("click", function (e) {
+    toggleHeart(i);
+  });
+};
+
+function toggleHeart(wishListIndex) {
+
+  const img = wishlistIcons[wishListIndex].getElementsByTagName('img')[0];
+  const filledHeartSrc = 'assets/images/icons8-heart-1001.png';
+  const emptyHeartSrc = 'assets/images/icons8-heart-100.png';
+
+  if (img.src.substring(22) == emptyHeartSrc) {
+    img.src = filledHeartSrc;
+  } else {
+    img.src = emptyHeartSrc;
+  }
+};
