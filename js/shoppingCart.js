@@ -120,8 +120,7 @@ function removeItemFromCart(index) {
   //als quantity groter dan 1 is dan -1 als het 1 is dan delete element
   if (item.quantity > 1) {
     item.quantity--;
-  } 
-  else {
+  } else {
     cart.splice(index, 1);
   }
 
@@ -144,14 +143,15 @@ for (let i = 0; i < wishlistIcons.length; i++) {
 };
 
 function toggleHeart(wishListIndex) {
+  const icon = wishlistIcons[wishListIndex];
+  const img = icon.getElementsByTagName('img')[0];
+  const filledHeartClass = 'filled-heart';
 
-  const img = wishlistIcons[wishListIndex].getElementsByTagName('img')[0];
-  const filledHeartSrc = 'assets/images/icons8-heart-1001.png';
-  const emptyHeartSrc = 'assets/images/icons8-heart-100.png';
+  icon.classList.toggle(filledHeartClass);
 
-  if (img.src.substring(22) == emptyHeartSrc) {
-    img.src = filledHeartSrc;
+  if (icon.classList.contains(filledHeartClass)) {
+    img.src = 'assets/images/icons8-heart-1002.png';
   } else {
-    img.src = emptyHeartSrc;
+    img.src = 'assets/images/icons8-heart-1001.png';
   }
 };
