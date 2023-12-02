@@ -301,7 +301,7 @@ form label {
 
 form input,
 form textarea {
-  width: 75%;
+  width: 85%;
   padding: 0.5rem 0.7rem;
   background-color: var(--clr-white);
   border-radius: 0.1rem;
@@ -540,6 +540,7 @@ aside {
 
 #product-page-container img {
   width: 600px;
+  object-fit: cover;
   box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.20);
   border: rgba(0, 0, 0, 0.6) solid 1px;
 }
@@ -547,6 +548,7 @@ aside {
 #product-page-container h1 {
   font-size: 2.4rem;
   line-height: 2rem;
+  margin-bottom: 0.7rem;
 }
 
 #product-article select {
@@ -630,15 +632,17 @@ select.classic {
   line-height: 1.8rem;
   padding: 1rem;
   background-color: #fff;
-  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.80);
-  /* border: solid black 1px; */
-  border-radius: 10px;
+  /* box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.80);
+  border: solid black 1px; */
+  border-radius: 5px;
   color: black;
   font-size: 0.9rem;
   width: 80%;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 0.4rem;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.20);
+    border: rgba(0, 0, 0, 0.6) solid 1px;
   
 }
 
@@ -685,6 +689,20 @@ select.classic {
 .review-container #submitBtn:hover {
   background-color: #620920;
   opacity: 0.8;
+}
+
+#reviews #recensies-text {
+  font-size: 0.9rem;
+  margin-left: 0.4rem;
+}
+
+#reviews .fa {
+  color: black;
+  font-size: 1.3rem;
+}
+
+#reviews .checked {
+  color: rgb(221, 188, 0);
 }
 
 .spanRed {
@@ -776,7 +794,7 @@ select.classic {
     line-height: 0rem;
   }
   #product-page-container {
-    padding: 3rem;
+    padding: 2rem;
     gap: 2rem 0;
   }
   #product-page-container select {
@@ -803,6 +821,10 @@ select.classic {
 @media screen and (max-width: 768px) {
   nav {
     display: none;
+  }
+
+  #map {
+    width: 25rem;
   }
 
   #contact {
@@ -946,7 +968,7 @@ select.classic {
   }
 
   #map {
-    width: 21rem;
+    width: 24rem;
   }
 
   .shop-grid-container {
@@ -987,5 +1009,11 @@ select.classic {
   #product-title h1 {
     font-size: 1rem;
     padding: 2rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #map {
+    width: 20rem;
   }
 }
