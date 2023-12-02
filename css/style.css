@@ -455,6 +455,7 @@ aside {
   color: var(--clr-maroon);
   cursor: pointer;
   font-size: 0.9rem;
+  width: 10%;
 }
 
 #checkout-text:hover {
