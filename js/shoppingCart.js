@@ -130,7 +130,7 @@ function removeItemFromCart(index) {
 
 function updateCheckoutText() {
   if (cart.length > 0) {
-    checkoutText.innerHTML = "$Checkout";
+    checkoutText.innerHTML = "purchase";
   } else {
     checkoutText.innerHTML = "";
   }
