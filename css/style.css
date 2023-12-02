@@ -437,12 +437,14 @@ aside {
   /* margin-right: 2.3rem;
   margin-left: 2.3rem; */
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 #cart-header {
   font-size: 1.3rem;
   font-weight: 600;
   text-decoration: underline;
+  margin-top: 0.5rem;
 }
 
 #total-price {
@@ -452,6 +454,11 @@ aside {
 #checkout-text {
   color: var(--clr-maroon);
   cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#checkout-text:hover {
+  text-decoration: underline;
 }
 
 .cart-icon {
@@ -685,15 +692,14 @@ select.classic {
 }
 
 .wishlist-icon {
-  position: sticky;
-  top: 100px;
-  right: 20px;
+  position: absolute;
+  top: 0;
   cursor: pointer;
 }
 
 .wishlist-icon img {
-  width: 30px;
-  height: 30px;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 
 /* height */
@@ -720,6 +726,9 @@ select.classic {
   .about-me-text {
     width: 40rem;
   }
+  .product-button {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 1030px) {
@@ -730,6 +739,28 @@ select.classic {
 
   .contact-box {
     width: 26rem;
+  }
+
+  .shop-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        'aside aside aside'
+        'main main main'
+        'main main main'
+        'main main main'
+        'main main main'
+        'main main main';
+    padding: 0;
+    gap: 0;
+  }
+
+  .product-button-remove {
+    margin-right: 70%;
+  }
+
+  .shop-grid-container article {
+    padding: 1rem;
   }
 }
 
@@ -894,6 +925,10 @@ select.classic {
     padding-right: 1rem;
     font-size: 0.9rem;
   }
+
+  .product-button-remove {
+    margin-right: 60%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -904,6 +939,10 @@ select.classic {
 
   .contact-box {
     width: 97%;
+  }
+
+  .product-button-remove {
+    margin-right: 50%;
   }
 
   #map {
@@ -922,6 +961,10 @@ select.classic {
         'main';
     padding: 0;
     gap: 0;
+  }
+
+  .product-button {
+    width: 35%;
   }
 }
 
