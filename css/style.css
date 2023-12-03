@@ -1017,4 +1017,8 @@ select.classic {
   #map {
     width: 20rem;
   }
+
+  .product-button {
+    width: 44%;
+  }
 }
