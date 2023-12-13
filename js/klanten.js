@@ -7,6 +7,7 @@ function getRandomUser() {
         usersInfo += `
           <div class="user">
             <img src="${user.picture.large}" alt="User Picture">
+            <p>Aanspreektitel: ${user.name.title}</p>
             <p>Voornaam: ${user.name.first}</p>
             <p>Achternaam: ${user.name.last}</p>
             <p>Land: ${user.location.country}</p>
