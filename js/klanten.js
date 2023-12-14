@@ -1,5 +1,5 @@
 function getRandomUser() {
-  fetch('https://randomuser.me/api/?results=16')
+  fetch('https://randomuser.me/api/?results=15')
     .then(response => response.json())
     .then(data => {
       let usersInfo = '';
