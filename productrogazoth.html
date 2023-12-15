@@ -8,9 +8,8 @@
 	<link rel="icon" type="image/x-icon" href="assets/images/keyboard_3x-removebg-preview.png">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 	<script src="js/navScript.js" defer></script>
-  <title>product</title>
+  <title>Product</title>
 </head>
 <body>
   <header>
@@ -23,11 +22,16 @@
     <nav class="main-nav" id="nav-menu">
       <a href="index.html">Home</a>
       <a href="shop.html">Toetsenborden</a>
+			<a href="klanten.html">Klanten</a>
       <a href="contact.html">Contact</a>
     </nav>
     <figure class="icons">
-      <img src="assets/images/search-interface-symbol.png" alt="search icon">
-      <img src="assets/images/user(2).png" alt="user icon">
+			<form id="search-bar" class="show-search-bar" action="#">
+				<button id="submit-button" type="submit"><img src="assets/images/search-square.512x512.png"></button>
+				<input type="search">
+			</form>
+      <img src="assets/images/search-interface-symbol.png" alt="search icon" id="search-icon">
+      <!-- <img src="assets/images/user(2).png" alt="user icon"> -->
       <img id="cart-icon" src="assets/images/shopping-bag-removebg-preview.png" alt="shopping cart icon">
     </figure>
   </header>
@@ -41,6 +45,7 @@
       <article>
         <img src="assets/images/asusazothbg.jpg" height="428px">
       </article>
+
       <article id="product-article">
         <h1 id="product-heading">Asus Rog Azoth<br>
           <span>Mechanisch Toetsenbord</span></h1>
@@ -91,7 +96,6 @@
         <p><strong>Ondersteuning voor toetsenbordverlichting:</strong> RGB</p>
         <p><strong>Afmetingen van het artikel LxBxH:</strong> 326 x 136 x 40 mm</p>
       </article>
-
 
         <section class="review-container">
           <form action="#">
