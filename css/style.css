@@ -854,9 +854,6 @@ select.classic {
 }
 
 @media screen and (max-width: 1128px) {
-  .about-me-text {
-    width: 40rem;
-  }
   .product-button {
     width: 60%;
   }
