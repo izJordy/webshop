@@ -5,13 +5,13 @@ function getRandomUser() {
       let usersInfo = '';
       data.results.forEach(user => {
         usersInfo += `
-          <div class="user">
+          <article class="user">
             <img src="${user.picture.large}" alt="User Picture">
             <p>Aanspreektitel: ${user.name.title}</p>
             <p>Voornaam: ${user.name.first}</p>
             <p>Achternaam: ${user.name.last}</p>
             <p>Land: ${user.location.country}</p>
-          </div>
+          </article>
         `;
       });
       document.getElementById('customer-info').innerHTML = usersInfo;
