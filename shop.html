@@ -11,7 +11,7 @@
   <script src="js/navScript.js" defer></script>
   <title>Shop</title>
 </head>
-<body>
+<body id="shop-grid-container">
   <header>
     <button class="hamburger">
       <div class="bar"></div>
@@ -40,22 +40,22 @@
     <img src="assets/images/katharina-gloth-dbgbyzFR8uI-unsplash.jpg" alt="banner image">
   </section>
 
-  <main>
-    <section class="shop-grid-container">
-      <aside>
-        <section>
-            <h2 id="cart-header">winkelwagen</h2>
-            <p id="total-price">Totaalbedrag: €0.00</p>
-            <br>
-          <ul id="cart-items">
-          </ul>
-          <p id="checkout-text"></p>
-        </section>
-        <section id="sidebar">
-          <p id="message"></p>
-        </section>
-      </aside>
+  <aside>
+    <section>
+        <h2 id="cart-header">winkelwagen</h2>
+        <p id="total-price">Totaalbedrag: €0.00</p>
+        <br>
+      <ul id="cart-items">
+      </ul>
+      <p id="checkout-text"></p>
+    </section>
+    <section id="sidebar">
+      <p id="message"></p>
+    </section>
+  </aside>
 
+  <main>
+    <section class="shop-flex-container">
       <article class="product">
         <a href="productrogazoth.html">
           <img src="assets/images/asusrogazoth.png" alt="Product">
