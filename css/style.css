@@ -519,7 +519,7 @@ aside {
   justify-content: center;
   gap: 0.3rem;
   font-size: 0.9rem;
-  width: 40%;
+  width: 50%;
 }
 
 .product-button img{
@@ -1086,7 +1086,7 @@ select.classic {
   }
 
   .product-button {
-    width: 40%;
+    width: 60%;
   }
 }
 
@@ -1114,7 +1114,7 @@ select.classic {
 
 @media screen and (max-width: 420px) {
   .product-button {
-    width: 50%;
+    width: 70%;
   }
 
   .product-button-remove {
